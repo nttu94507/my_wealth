@@ -1,6 +1,6 @@
 // src/app/page.js
 "use client";
-import { useState } from "react";
+// import { useState } from "react";
 import Layout from "./layout";
 import { CategoryBlock } from "../../components/CategoryBlock"
 import { ResultSummary } from "../../components/ResultSummary";
