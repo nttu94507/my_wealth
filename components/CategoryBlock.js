@@ -1,7 +1,5 @@
 // src/app/components/CategoryBlock.js
 "use client";
-import { useState } from "react";
-
 export function CategoryBlock({ title, items, setItems, total, color }) {
     const addItem = () => setItems((prev) => [...prev, { name: "", amount: 0 }]);
     const updateItem = (index, value) => {
