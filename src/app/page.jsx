@@ -2,7 +2,7 @@
 "use client";
 import { useState } from "react";
 import Layout from "./layout";
-import { CategoryBlock } from "../../components/CategoryBlock"
+import { CategoryBlock } from "../../components/CategoryBlock";
 import { ResultSummary } from "../../components/ResultSummary";
 
 export default function FinancialCalculator() {
@@ -32,7 +32,9 @@ export default function FinancialCalculator() {
         <CategoryBlock title="負債" items={liabilityItems} setItems={setLiabilityItems} total={totalLiabilities} color="bg-yellow-200" />
         {/* </div> */}
         <ResultSummary totalIncome={totalIncome} totalExpenses={totalExpenses} netIncome={netIncome} totalAssets={totalAssets} totalLiabilities={totalLiabilities} netWorth={netWorth} />
+
       </div>
+
     </Layout>
   );
 }
