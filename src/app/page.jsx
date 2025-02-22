@@ -5,6 +5,8 @@ import Layout from "./layout";
 import { CategoryBlock } from "../../components/CategoryBlock";
 import { ResultSummary } from "../../components/ResultSummary";
 
+import AdsBanner from "../../components/AdsBanner";
+
 export default function FinancialCalculator() {
   const [incomeItems, setIncomeItems] = useState([]);
   const [expenseItems, setExpenseItems] = useState([]);
@@ -32,7 +34,7 @@ export default function FinancialCalculator() {
         <CategoryBlock title="負債" items={liabilityItems} setItems={setLiabilityItems} total={totalLiabilities} color="bg-yellow-200" />
         {/* </div> */}
         <ResultSummary totalIncome={totalIncome} totalExpenses={totalExpenses} netIncome={netIncome} totalAssets={totalAssets} totalLiabilities={totalLiabilities} netWorth={netWorth} />
-
+        <AdsBanner dataAdFormat="auto" dataFullWidthResponsive={true} dataAdSlot="ca-pub-3603375896756600" />
       </div>
 
     </Layout>
