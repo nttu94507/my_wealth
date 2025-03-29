@@ -833,6 +833,17 @@ export default function LotteryAnalyzer() {
 
   return (
     <div className="p-4">
+      <nav className="bg-blue-600 p-4 text-white flex space-x-4">
+        <Link href="/">
+          <div className="hover:underline">首頁</div>
+        </Link>
+        <Link href="/539">
+          <div className="hover:underline">開獎結果</div>
+        </Link>
+        {/* <Link href="/stats">
+          <div className="hover:underline">統計分析</div>
+        </Link> */}
+      </nav>
       <h1 className="text-xl font-bold mb-4">539 彩票數據分析</h1>
       <Link href="/539">
         <button>539</button>
