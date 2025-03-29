@@ -396,7 +396,7 @@ const lotteryData = [
     { date: "2025/3/25", numbers: [4, 20, 24, 27, 38] },
     { date: "2025/3/26", numbers: [1, 10, 12, 32, 35] },
     { date: "2025/3/27", numbers: [5, 25, 33, 36, 37] },
-    { date: "2025/3/28", numbers: [13, 24, 25, 36, 39] },
+    { date: "2025/3/28", numbers: [13, 24, 25, 36, 39] }
 ];
 
 const LotteryResults = () => {
