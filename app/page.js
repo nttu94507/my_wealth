@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
+import Link from "next/link";
 import './globals.css'
 
 const lotteryData = {
@@ -783,8 +784,9 @@ const data = [
 
 
 
+
 export default function LotteryAnalyzer() {
-  const [searchNums, setSearchNums] = useState(["", ""]);
+  const [searchNums, setSearchNums] = useState(["", "", "", "", ""]);
   const data1 = [
     [1, 12, 23, 34, 35],
     [5, 11, 19, 23, 37],
@@ -832,6 +834,9 @@ export default function LotteryAnalyzer() {
   return (
     <div className="p-4">
       <h1 className="text-xl font-bold mb-4">539 彩票數據分析</h1>
+      <Link href="/539">
+        <button>539</button>
+      </Link>
       {/* 號碼出現頻率長條圖 */}
       <h2 className="text-lg font-semibold mb-2">號碼出現頻率</h2>
       <ResponsiveContainer width="100%" height={300}>
@@ -865,6 +870,27 @@ export default function LotteryAnalyzer() {
           placeholder="輸入數字2"
           value={searchNums[1]}
           onChange={(e) => handleInputChange(1, e.target.value)}
+          className="border p-2 rounded"
+        />
+        <input
+          type="number"
+          placeholder="輸入數字3"
+          value={searchNums[2]}
+          onChange={(e) => handleInputChange(2, e.target.value)}
+          className="border p-2 rounded"
+        />
+        <input
+          type="number"
+          placeholder="輸入數字4"
+          value={searchNums[3]}
+          onChange={(e) => handleInputChange(3, e.target.value)}
+          className="border p-2 rounded"
+        />
+        <input
+          type="number"
+          placeholder="輸入數字5"
+          value={searchNums[4]}
+          onChange={(e) => handleInputChange(4, e.target.value)}
           className="border p-2 rounded"
         />
       </div>
